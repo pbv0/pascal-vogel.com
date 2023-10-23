@@ -2,12 +2,11 @@
 import Layout from "../layouts/Layout.astro";
 import { Image } from "astro:assets";
 import pv from "../media/pv.jpg";
-import { format } from "date-fns";
 import Socials from "../components/socials.astro";
 import Publications from "../components/publications.astro";
 ---
 
-<Layout title="Welcome to Astro.">
+<Layout title="Pascal Vogel">
   <main>
     <div class="p-10 md:p-28 max-w-screen-xl mx-auto text-white">
       <Image
@@ -17,24 +16,23 @@ import Publications from "../components/publications.astro";
       />
       <div class="mb-20">
         <h2 class="text-2xl md:text-3xl font-bold mb-5">Hello 👋</h2>
-        <p class="text-lg md:text-xl mb-5 leading-8">
+        <p class="text-lg md:text-xl mb-5 leading-9">
           I'm Pascal. I work as a Solutions Achitect at <a
             href="https://aws.amazon.com/"
             target="_blank"
             aria-label="Link to Amazon Web Services (AWS)"
-            class="text-emerald-200 hover:underline"
-            >Amazon Web Services (AWS)</a
+            class="text-amber-300 hover:underline">Amazon Web Services (AWS)</a
           >. In my day job, I help startups and enterprises build cloud-native
           solutions. Previously, I was a research associate and doctoral student
           at the <a
             href="https://www.inf.uni-hamburg.de/inst/ab/itmc.html"
             target="_blank"
             aria-label="Link to the Chair of IT Management and Consulting at the University of Hamburg"
-            class="text-emerald-200 hover:underline"
+            class="text-amber-300 hover:underline"
             >Chair of IT Management and Consulting</a
           > at the University of Hamburg.
         </p>
-        <p class="text-lg mb-8 leading-8">
+        <p class="text-lg md:text-xl mb-8 leading-9">
           I love learning new technologies and connecting with like-minded
           people who want to make a difference. Take a look at my work below and
           reach out if you want to chat!

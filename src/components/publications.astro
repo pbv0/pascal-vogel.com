@@ -26,9 +26,9 @@ const groupedPublications = groupByYear(publications);
                 .sort((a, b) => new Date(b.published) - new Date(a.published))
                 .map(({ published, url, title, outlet }) => (
                   <div class="mt-6">
-                    <p class="text-lg md:text-xl font-sans leading-8">
+                    <p class="text-lg md:text-xl font-sans leading-9">
                       <a href={url} class="hover:underline">
-                        <span class="text-emerald-200">{title}</span>{" "}
+                        <span class="text-amber-300">{title}</span>{" "}
                       </a>
                       <span class="text-gray-200">
                         {" "}
