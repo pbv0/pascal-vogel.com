@@ -3,260 +3,156 @@
     "year": "2023",
     "published": "2023-10-18",
     "title": "Wie generative KI und AWS Serverless einen Chat mit Dokumenten ermöglichen",
-    "outlet": {
-      "name": "AWS Germany Blog",
-      "url": "https://aws.amazon.com/blogs/germany/"
-    },
     "url": "https://aws.amazon.com/blogs/germany/wie-generative-ki-und-aws-serverless-einen-chat-mit-dokumenten-ermoeglichen/"
   },
   {
     "year": "2023",
     "published": "2023-10-13",
     "title": "AWS Lambda: Serverless verstehen und anwenden",
-    "outlet": {
-      "name": "Entwickler Magazin",
-      "url": "https://entwickler.de/magazine-ebooks/entwickler-magazin/"
-    },
     "url": "https://entwickler.de/serverless/aws-lambda-einfuehrung"
   },
   {
     "year": "2023",
     "published": "2023-10-04",
     "title": "Building a serverless document chat with AWS Lambda and Amazon Bedrock",
-    "outlet": {
-      "name": "AWS Compute Blog",
-      "url": "https://aws.amazon.com/blogs/compute/"
-    },
     "url": "https://aws.amazon.com/blogs/compute/building-a-serverless-document-chat-with-aws-lambda-and-amazon-bedrock/"
   },
   {
     "year": "2023",
     "published": "2023-09-13",
     "title": "Deploy and scale Django applications on AWS App Runner",
-    "outlet": {
-      "name": "AWS Containers Blog",
-      "url": "https://aws.amazon.com/blogs/containers/"
-    },
     "url": "https://aws.amazon.com/blogs/compute/building-a-serverless-document-chat-with-aws-lambda-and-amazon-bedrock/"
   },
   {
     "year": "2023",
     "published": "2023-09-01",
     "title": "Scaling Distributed Systems with Event Sourcing, CQRS, and AWS Serverless",
-    "outlet": {
-      "name": "community.aws",
-      "url": "https://community.aws/"
-    },
     "url": "https://community.aws/posts/scaling-distributed-systems-event-sourcing-cqrs-serverless/"
   },
   {
     "year": "2023",
     "published": "2023-06-29",
     "title": "SAP auf AWS: Individuelle Modernisierungspfade zur SAP-Umgebung in der Cloud",
-    "outlet": {
-      "name": "AWS Germany Blog",
-      "url": "https://aws.amazon.com/blogs/germany/"
-    },
     "url": "https://aws.amazon.com/blogs/germany/sap-auf-aws-individuelle-modernisierungspfade-zur-sap-umgebung-in-der-cloud/"
   },
   {
     "year": "2023",
     "published": "2023-06-29",
     "title": "Retrieving parameters and secrets with Powertools for AWS Lambda (TypeScript)",
-    "outlet": {
-      "name": "AWS Compute Blog",
-      "url": "https://aws.amazon.com/blogs/compute/"
-    },
     "url": "https://aws.amazon.com/blogs/compute/retrieving-parameters-and-secrets-with-powertools-for-aws-lambda-typescript/"
   },
   {
     "year": "2023",
     "published": "2023-03-29",
     "title": "Integrate AWS Step Functions with AWS Amplify using Amplify Custom Resources",
-    "outlet": {
-      "name": "AWS Front-End Web & Mobile Blog",
-      "url": "https://aws.amazon.com/de/blogs/mobile/"
-    },
     "url": "https://aws.amazon.com/blogs/mobile/integrate-aws-step-functions-with-aws-amplify-using-amplify-custom-resources/"
   },
   {
     "year": "2022",
     "published": "2022-11-01",
     "title": "Auto Scaling",
-    "outlet": {
-      "name": "IT Administrator",
-      "url": "https://www.it-administrator.de/"
-    },
     "url": "https://www.it-administrator.de/heftarchiv-article?xv_article=3414"
   },
   {
     "year": "2022",
     "published": "2022-08-02",
     "title": "Workflow-Management mit AWS Step Functions",
-    "outlet": {
-      "name": "dev-insider.de",
-      "url": "https://dev-insider.de/"
-    },
     "url": "https://www.dev-insider.de/workflow-management-mit-aws-step-functions-a-c6a42696eccf5fa7fe4224b56c778fe8/"
   },
   {
     "year": "2022",
     "published": "2022-07-01",
     "title": "Understanding the lifecycle of Amazon EC2 Dedicated Hosts",
-    "outlet": {
-      "name": "AWS Compute Blog",
-      "url": "https://aws.amazon.com/blogs/compute/"
-    },
     "url": "https://aws.amazon.com/blogs/compute/understanding-the-lifecycle-of-amazon-ec2-dedicated-hosts/"
   },
   {
     "year": "2022",
     "published": "2022-08-03",
     "title": "Building a serverless image catalog with AWS Step Functions Workflow Studio",
-    "outlet": {
-      "name": "AWS Compute Blog",
-      "url": "https://aws.amazon.com/blogs/compute/"
-    },
     "url": "https://aws.amazon.com/es/blogs/compute/building-a-serverless-image-catalog-with-aws-step-functions-workflow-studio/"
   },
   {
     "year": "2022",
-    "published": "2022-02-01",
+    "published": "2022-02-21",
     "title": "Design Knowledge for the Lifecycle Management of Conversational Agents",
-    "outlet": {
-      "name": "Wirtschaftsinformatik 2022",
-      "url": "https://aws.amazon.com/blogs/compute/"
-    },
-    "url": "https://aws.amazon.com/es/blogs/compute/building-a-serverless-image-catalog-with-aws-step-functions-workflow-studio/"
+    "url": "https://aisel.aisnet.org/wi2022/ai/ai/3/"
   },
   {
     "year": "2022",
-    "published": "2022-02-01",
+    "published": "2022-01-04",
     "title": "Exploring Archetypes of Value Co-Destructive Privacy Practices",
-    "outlet": {
-      "name": "HICSS 2022",
-      "url": "https://aws.amazon.com/blogs/compute/"
-    },
-    "url": "https://aws.amazon.com/es/blogs/compute/building-a-serverless-image-catalog-with-aws-step-functions-workflow-studio/"
+    "url": "http://hdl.handle.net/10125/79505"
   },
   {
     "year": "2021",
-    "published": "2021",
+    "published": "2021-05-19",
     "title": "Designing Openness-Infusing Socio-Technical Artifacts",
-    "outlet": {
-      "name": "Dissertation, Universität Hamburg",
-      "url": ""
-    },
-    "url": ""
+    "url": "https://ediss.sub.uni-hamburg.de/handle/ediss/9019"
   },
   {
     "year": "2021",
-    "published": "2021",
+    "published": "2021-01-05",
     "title": "Fostering Social Resilience via Online Neighborhood Social Networks During the COVID-19 Pandemic and Beyond: Status Quo, Design Dilemmas and Research Opportunities",
-    "outlet": {
-      "name": "Hawaii International Conference on System Sciences (HICSS), A Virtual AIS Conference",
-      "url": ""
-    },
-    "url": ""
+    "url": "https://scholarspace.manoa.hawaii.edu/handle/10125/70984"
   },
   {
     "year": "2021",
-    "published": "2021",
+    "published": "2021-01-05",
     "title": "Older Adults' Use of Online Neighborhood Social Networks: Perceptions, Challenges and Effects",
-    "outlet": {
-      "name": "Hawaii International Conference on System Sciences (HICSS), A Virtual AIS Conference",
-      "url": ""
-    },
-    "url": ""
+    "url": "https://scholarspace.manoa.hawaii.edu/handle/10125/71090"
   },
   {
     "year": "2020",
-    "published": "2020",
+    "published": "2020-12-13",
     "title": "Design and Evaluation of an Online Neighborhood Social Network for Fostering Social Connectedness and Participation: Lessons from Two Urban Neighborhoods",
-    "outlet": {
-      "name": "International Conference on Information Systems (ICIS), A Virtual AIS Conference",
-      "url": ""
-    },
-    "url": ""
+    "url": "https://aisel.aisnet.org/icis2020/digitization_in_cities/digitization_in_cities/1/"
   },
   {
     "year": "2020",
-    "published": "2020",
+    "published": "2020-08-10",
     "title": "Collaborating with the Crowd for Software Requirements Engineering: A Literature Review",
-    "outlet": {
-      "name": "Americas Conference on Information Systems (AMCIS), A Virtual AIS Conference",
-      "url": ""
-    },
-    "url": ""
+    "url": "https://aisel.aisnet.org/amcis2020/virtual_communities/virtual_communities/1/"
   },
   {
     "year": "2020",
-    "published": "2020",
+    "published": "2020-06-15",
     "title": "Designing Tool Support for Crowd-Sourced Community Initiatives on Online Neighborhood Social Networks",
-    "outlet": {
-      "name": "European Conference on Information Systems (ECIS), A Virtual AIS Conference",
-      "url": ""
-    },
-    "url": ""
+    "url": "https://aisel.aisnet.org/ecis2020_rp/1/"
   },
   {
     "year": "2020",
-    "published": "2020",
+    "published": "2020-06-15",
     "title": "Design Goals for Consent at Scale in Digital Service Ecosystems",
-    "outlet": {
-      "name": "European Conference on Information Systems (ECIS), A Virtual AIS Conference",
-      "url": ""
-    },
-    "url": ""
+    "url": "https://aisel.aisnet.org/ecis2020_rp/69/"
   },
   {
     "year": "2020",
-    "published": "2020",
+    "published": "2020-03-09",
     "title": "Conceptualizing Design Parameters of Online Neighborhood Social Networks",
-    "outlet": {
-      "name": "International Conference on Wirtschaftsinformatik (WI), Potsdam, Germany",
-      "url": ""
-    },
-    "url": ""
+    "url": "https://library.gito.de/wp-content/uploads/2021/08/O5_Vogel-Conceptualizing_Design_Parameters_of_Online_Neighborhood_Social_Networks-418_c.pdf"
   },
   {
     "year": "2020",
-    "published": "2020",
+    "published": "2020-01-07",
     "title": "Multilevel Design for Smart Communities: The Case of Building a Local Online Neighborhood Social Community",
-    "outlet": {
-      "name": "Hawaii International Conference on System Sciences (53), Grand Wailea, Hawaii, USA",
-      "url": ""
-    },
-    "url": ""
+    "url": "https://scholarspace.manoa.hawaii.edu/handle/10125/64023"
   },
   {
     "year": "2019",
-    "published": "2019",
+    "published": "2019-06-13",
     "title": "Leveraging the Internal Crowd for Continuous Requirements Engineering: Lessons Learned from a Design Science Research Project",
-    "outlet": {
-      "name": "European Conference on Information Systems (ECIS), Stockholm, Sweden",
-      "url": ""
-    },
-    "url": ""
+    "url": "https://aisel.aisnet.org/ecis2019_rp/4/"
   },
   {
     "year": "2019",
-    "published": "2019",
+    "published": "2019-06-13",
     "title": "Healthy, Active and Connected: Towards Designing an Age-Friendly Digital Neighborhood Platform",
-    "outlet": {
-      "name": "European Conference on Information Systems (ECIS), Stockholm, Sweden",
-      "url": ""
-    },
-    "url": ""
+    "url": "https://aisel.aisnet.org/ecis2019_rip/5/"
   },
   {
     "year": "2018",
-    "published": "2018",
+    "published": "2018-12-13",
     "title": "Intelligent Collaboration of Humans and Language-Based Assistants (INSTANT)",
-    "outlet": {
-      "name": "International Conference on Information Systems (ICIS), San Francisco, USA",
-      "url": ""
-    },
-    "url": ""
+    "url": "https://www.inf.uni-hamburg.de/en/inst/ab/lt/publications/2018-semmannetal-icis-instant.pdf"
   }
 ]
