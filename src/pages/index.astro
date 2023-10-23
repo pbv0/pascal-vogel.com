@@ -1,76 +1,47 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import publications from "../data/publications.json";
 import { Image } from "astro:assets";
 import pv from "../media/pv.jpg";
 import { format } from "date-fns";
 import Socials from "../components/socials.astro";
-
-function groupByYear(data) {
-  return data.reduce((acc, item) => {
-    (acc[item.year] = acc[item.year] || []).push(item);
-    return acc;
-  }, {});
-}
-
-const groupedPublications = groupByYear(publications);
+import Publications from "../components/publications.astro";
 ---
 
 <Layout title="Welcome to Astro.">
   <main>
-    <div class="p-28 max-w-screen-xl mx-auto">
-      <div class="bg-white text-black rounded-lg">
-        <Image
-          src={pv}
-          alt="Portrait image of Pascal Vogel"
-          class="rounded-full w-40 h-40 -mt-10 -ml-10 float-left"
-        />
-        <div class="p-10">
-          <div class="mb-10 ml-28">
-            <h1 class="text-3xl font-bold mb-4">Hi, I'm Pascal!</h1>
-            <p class="text-lg mb-3">
-              I'm a Solutions Achitect at Amazon Web Services (AWS). In my day
-              job, I help startups and enterprises build cloud-native solutions.
-              I love learning new technologies and connecting with like-minded
-              people who want to make a difference. Take a look at my work below
-              and reach out if you want to chat!
-            </p>
-            <Socials />
-          </div>
-          <div>
-            <h2 class="font-bold text-xl mb-4">Publications</h2>
-            <div>
-              {
-                Object.entries(groupedPublications)
-                  .sort(([yearA], [yearB]) => yearB - yearA)
-                  .map(([year, yearlyPublications]) => (
-                    <div class="mt-4">
-                      <h2 class="text-xl font-bold">{year}</h2>
-                      {yearlyPublications
-                        .sort(
-                          (a, b) =>
-                            new Date(b.published) - new Date(a.published)
-                        )
-                        .map(({ published, url, title, outlet }) => (
-                          <div class="mt-3">
-                            <p class="pb-0.5">
-                              {format(new Date(published), "MMMM d, yyyy")} |{" "}
-                              <a href={outlet.url} class="hover:underline">
-                                {outlet.name}
-                              </a>
-                            </p>
-                            <a href={url} class="hover:underline">
-                              <p class="font-semibold text-lg">{title}</p>
-                            </a>
-                          </div>
-                        ))}
-                    </div>
-                  ))
-              }
-            </div>
-          </div>
-        </div>
+    <div class="p-28 max-w-screen-xl mx-auto text-white">
+      <Image
+        src={pv}
+        alt="Portrait image of Pascal Vogel"
+        class="rounded-full w-16 h-16 mb-5"
+      />
+      <div class="mb-20">
+        <h2 class="text-3xl font-bold mb-5">Hello 👋</h2>
+        <p class="text-xl mb-5 leading-8">
+          I'm Pascal. I work as a Solutions Achitect at <a
+            href="https://aws.amazon.com/"
+            target="_blank"
+            aria-label="Link to Amazon Web Services (AWS)"
+            class="text-emerald-200 hover:underline"
+            >Amazon Web Services (AWS)</a
+          >. In my day job, I help startups and enterprises build cloud-native
+          solutions. Previously, I was a research associate and doctoral student
+          at the <a
+            href="https://www.inf.uni-hamburg.de/inst/ab/itmc.html"
+            target="_blank"
+            aria-label="Link to the Chair of IT Management and Consulting at the University of Hamburg"
+            class="text-emerald-200 hover:underline"
+            >Chair of IT Management and Consulting</a
+          > at the University of Hamburg.
+        </p>
+        <p class="text-xl mb-8 leading-8">
+          I love learning new technologies and connecting with like-minded
+          people who want to make a difference. Take a look at my work below and
+          reach out if you want to chat!
+        </p>
+        <Socials />
       </div>
+      <Publications />
     </div>
   </main>
 </Layout>
