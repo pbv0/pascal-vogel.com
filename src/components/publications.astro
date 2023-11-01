@@ -1,15 +1,16 @@
 ---
+import { type Publication, type GroupedPublications } from "../types";
 import publications from "../data/publications.json";
 import { format } from "date-fns";
 
-function groupByYear(data) {
-  return data.reduce((acc, item) => {
+function groupByYear(data: Publication[]): GroupedPublications {
+  return data.reduce((acc: GroupedPublications, item) => {
     (acc[item.year] = acc[item.year] || []).push(item);
     return acc;
   }, {});
 }
 
-const groupedPublications = groupByYear(publications);
+const groupedPublications: GroupedPublications = groupByYear(publications);
 ---
 
 <div>
@@ -17,14 +18,18 @@ const groupedPublications = groupByYear(publications);
   <div>
     {
       Object.entries(groupedPublications)
-        .sort(([yearA], [yearB]) => yearB - yearA)
+        .sort(([yearA], [yearB]) => parseInt(yearB) - parseInt(yearA))
         .map(([year, yearlyPublications]) => (
           <div class="mt-4">
             <h2 class="text-lg md:text-2xl font-bold">{year}</h2>
             <div class="mb-8">
               {yearlyPublications
-                .sort((a, b) => new Date(b.published) - new Date(a.published))
-                .map(({ published, url, title, outlet }) => (
+                .sort(
+                  (a, b) =>
+                    new Date(b.published).getTime() -
+                    new Date(a.published).getTime()
+                )
+                .map(({ published, url, title, translations }) => (
                   <div class="mt-6">
                     <p class="text-lg md:text-xl font-sans leading-9">
                       <a
@@ -39,6 +44,19 @@ const groupedPublications = groupByYear(publications);
                         - {format(new Date(published), "MMMM d, yyyy")}
                       </span>
                     </p>
+                    {translations &&
+                      translations.map(({ published, url, title, lang }) => (
+                        <p class="text-sm pl-7 mt-3">
+                          <span class="mr-1">{lang}</span>
+                          <a
+                            href={url}
+                            class="text-amber-300 underline underline-offset-2 hover:text-amber-500"
+                            target="_blank"
+                          >
+                            {title}{" "}
+                          </a>
+                        </p>
+                      ))}
                   </div>
                 ))}
             </div>
