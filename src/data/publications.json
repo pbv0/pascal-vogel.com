@@ -21,14 +21,14 @@
         "year": "2023",
         "published": "2023-10-31",
         "title": "Criando um bate-papo de documentos Serverless com o AWS Lambda e o Amazon Bedrock",
-        "url": "https://aws.amazon.com/blogs/aws-brasil/criando-um-bate-papo-de-documentos-serverless-com-o-aws-lambda-e-o-amazon-bedrock/",
+        "url": "https://aws.amazon.com/pt/blogs/aws-brasil/criando-um-bate-papo-de-documentos-serverless-com-o-aws-lambda-e-o-amazon-bedrock/",
         "lang": "🇵🇹"
       },
       {
         "year": "2023",
         "published": "2023-10-18",
         "title": "Wie generative KI und AWS Serverless einen Chat mit Dokumenten ermöglichen",
-        "url": "https://aws.amazon.com/blogs/germany/wie-generative-ki-und-aws-serverless-einen-chat-mit-dokumenten-ermoeglichen/",
+        "url": "https://aws.amazon.com/de/blogs/germany/wie-generative-ki-und-aws-serverless-einen-chat-mit-dokumenten-ermoeglichen/",
         "lang": "🇩🇪"
       }
     ]
