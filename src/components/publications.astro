@@ -37,8 +37,9 @@ const groupedPublications: GroupedPublications = groupByYear(publications);
                         class="text-amber-300 underline underline-offset-2 hover:text-amber-500"
                         target="_blank"
                       >
-                        {title}{" "}
+                        {title}
                       </a>
+                      {" "}
                       <span class="text-gray-200">
                         {" "}
                         - {format(new Date(published), "MMMM d, yyyy")}
