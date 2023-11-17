@@ -2,7 +2,7 @@
   {
     "year": "2023",
     "published": "2023-11-17",
-    "title": "Visualize Amazon DynamoDB insights in Amazon QuickSight using the Amazon Athena DynamoDB connector",
+    "title": "Visualize Amazon DynamoDB insights in Amazon QuickSight using the Amazon Athena DynamoDB connector and AWS Glue",
     "url": "https://aws.amazon.com/blogs/big-data/visualize-amazon-dynamodb-insights-in-amazon-quicksight-using-the-amazon-athena-dynamodb-connector-and-aws-glue/"
   },
   {
