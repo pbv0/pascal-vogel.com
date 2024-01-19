@@ -1,5 +1,11 @@
 [
   {
+    "year": "2024",
+    "published": "2024-01-19",
+    "title": "Semantic Search API: MongoDB Atlas Vector Search With Amazon Bedrock & AWS Serverless",
+    "url": "https://dev.to/mongodb/semantic-search-api-mongodb-atlas-vector-search-with-amazon-bedrock-aws-serverless-31in/"
+  },
+  {
     "year": "2023",
     "published": "2023-11-17",
     "title": "Visualize Amazon DynamoDB insights in Amazon QuickSight using the Amazon Athena DynamoDB connector and AWS Glue",
