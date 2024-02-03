@@ -1,6 +1,18 @@
 [
   {
     "year": "2024",
+    "published": "2024-02-02",
+    "title": "Pinecone x Hashnode: add semantic search to your Hashnode blog posts",
+    "url": "https://serverlesstypescript.com/pinecone-x-hashnode-add-semantic-search-to-your-hashnode-blog-posts"
+  },
+  {
+    "year": "2024",
+    "published": "2024-02-01",
+    "title": "HashBridge: extend your Hashnode blog with event-driven serverless functions",
+    "url": "https://serverlesstypescript.com/hashbridge-extend-your-hashnode-blog-with-event-driven-serverless-functions"
+  },
+  {
+    "year": "2024",
     "published": "2024-01-19",
     "title": "Semantic Search API: MongoDB Atlas Vector Search With Amazon Bedrock & AWS Serverless",
     "url": "https://dev.to/mongodb/semantic-search-api-mongodb-atlas-vector-search-with-amazon-bedrock-aws-serverless-31in/"
