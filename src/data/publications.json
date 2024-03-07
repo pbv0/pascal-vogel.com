@@ -33,7 +33,16 @@
     "year": "2023",
     "published": "2023-11-15",
     "title": "Converting Apache Kafka events from Avro to JSON using EventBridge Pipes",
-    "url": "https://aws.amazon.com/blogs/compute/converting-apache-kafka-events-from-avro-to-json-using-eventbridge-pipes/"
+    "url": "https://aws.amazon.com/blogs/compute/converting-apache-kafka-events-from-avro-to-json-using-eventbridge-pipes/",
+    "translations": [
+      {
+        "year": "2024",
+        "published": "2024-03-06",
+        "title": "Convertendo eventos do Apache Kafka de Avro para JSON usando EventBridge Pipes",
+        "url": "https://aws.amazon.com/pt/blogs/aws-brasil/convertendo-eventos-do-apache-kafka-de-avro-para-json-usando-eventbridge-pipes/",
+        "lang": "🇵🇹"
+      }
+    ]
   },
   {
     "year": "2023",
