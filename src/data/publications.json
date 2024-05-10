@@ -1,6 +1,12 @@
 [
   {
     "year": "2024",
+    "published": "2024-04-30",
+    "title": "Wie der Hailo digital_hub mit Analytics und generativer KI nachhaltige Abfalllösungen entwickelt",
+    "url": "https://aws.amazon.com/de/blogs/germany/wie-der-hailo-digital_hub-mit-analytics-und-generativer-ki-nachhaltige-abfallloesungen-entwickelt/"
+  },
+  {
+    "year": "2024",
     "published": "2024-02-02",
     "title": "Pinecone x Hashnode: add semantic search to your Hashnode blog posts",
     "url": "https://serverlesstypescript.com/pinecone-x-hashnode-add-semantic-search-to-your-hashnode-blog-posts"
