@@ -1,6 +1,12 @@
 [
   {
     "year": "2024",
+    "published": "2024-05-21",
+    "title": "How 20 Minutes empowers journalists and boosts audience engagement with generative AI on Amazon Bedrock",
+    "url": "https://aws.amazon.com/de/blogs/machine-learning/how-20-minutes-empowers-journalists-and-boosts-audience-engagement-with-generative-ai-on-amazon-bedrock/"
+  },
+  {
+    "year": "2024",
     "published": "2024-04-30",
     "title": "Wie der Hailo digital_hub mit Analytics und generativer KI nachhaltige Abfalllösungen entwickelt",
     "url": "https://aws.amazon.com/de/blogs/germany/wie-der-hailo-digital_hub-mit-analytics-und-generativer-ki-nachhaltige-abfallloesungen-entwickelt/"
