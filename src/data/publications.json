@@ -1,6 +1,12 @@
 [
   {
     "year": "2024",
+    "published": "2024-08-28",
+    "title": "How to access data in Databricks from Amazon SageMaker notebooks",
+    "url": "https://community.databricks.com/t5/technical-blog/how-to-access-data-in-databricks-from-amazon-sagemaker-notebooks/ba-p/83638"
+  },
+  {
+    "year": "2024",
     "published": "2024-05-21",
     "title": "How 20 Minutes empowers journalists and boosts audience engagement with generative AI on Amazon Bedrock",
     "url": "https://aws.amazon.com/de/blogs/machine-learning/how-20-minutes-empowers-journalists-and-boosts-audience-engagement-with-generative-ai-on-amazon-bedrock/"
