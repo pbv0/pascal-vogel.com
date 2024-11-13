@@ -1,6 +1,12 @@
 [
   {
     "year": "2024",
+    "published": "2024-11-13",
+    "title": "Six steps to improve your RAG application’s data foundation",
+    "url": "https://community.databricks.com/t5/technical-blog/six-steps-to-improve-your-rag-application-s-data-foundation/ba-p/97700"
+  },
+  {
+    "year": "2024",
     "published": "2024-08-28",
     "title": "How to access data in Databricks from Amazon SageMaker notebooks",
     "url": "https://community.databricks.com/t5/technical-blog/how-to-access-data-in-databricks-from-amazon-sagemaker-notebooks/ba-p/83638"
