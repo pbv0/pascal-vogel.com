@@ -1,5 +1,11 @@
 [
   {
+    "year": "2025",
+    "published": "2025-03-17",
+    "title": "Automate your Databricks Apps deployments with GitHub Actions and Databricks Asset Bundles",
+    "url": "https://apps-cookbook.dev/blog/automate-apps-deployments-dabs"
+  },
+  {
     "year": "2024",
     "published": "2024-11-13",
     "title": "Six steps to improve your RAG application’s data foundation",
