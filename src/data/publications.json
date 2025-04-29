@@ -1,6 +1,12 @@
 [
   {
     "year": "2025",
+    "published": "2025-04-29",
+    "title": "Implement fine-grained permissions for Databricks Apps with on-behalf-of-user authorization",
+    "url": "https://community.databricks.com/t5/technical-blog/implement-fine-grained-permissions-for-databricks-apps-with-on/ba-p/116884"
+  },
+  {
+    "year": "2025",
     "published": "2025-03-17",
     "title": "Automate your Databricks Apps deployments with GitHub Actions and Databricks Asset Bundles",
     "url": "https://apps-cookbook.dev/blog/automate-apps-deployments-dabs"
