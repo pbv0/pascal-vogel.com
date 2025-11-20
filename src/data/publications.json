@@ -1,5 +1,11 @@
 [
-    {
+  {
+    "year": "2025",
+    "published": "2025-11-20",
+    "title": "How to Build Production-Ready Data and AI Apps with Databricks Apps and Lakebase",
+    "url": "https://www.databricks.com/blog/how-build-production-ready-data-and-ai-apps-databricks-apps-and-lakebase"
+  },
+  {
     "year": "2025",
     "published": "2025-06-23",
     "title": "Setting up your development environment for Databricks Apps",
