@@ -1,5 +1,17 @@
 [
   {
+    "year": "2026",
+    "published": "2026-03-16",
+    "title": "Ship quality enterprise AI agents to business users with Agent Bricks and Databricks Apps",
+    "url": "https://www.databricks.com/blog/ship-quality-enterprise-ai-agents-business-users-agent-bricks-and-databricks-apps"
+  },
+  {
+    "year": "2026",
+    "published": "2026-02-10",
+    "title": "Deploy Databricks Apps Directly from Git",
+    "url": "https://community.databricks.com/t5/technical-blog/deploy-databricks-apps-directly-from-git/ba-p/147766"
+  },
+  {
     "year": "2025",
     "published": "2025-11-20",
     "title": "How to Build Production-Ready Data and AI Apps with Databricks Apps and Lakebase",
