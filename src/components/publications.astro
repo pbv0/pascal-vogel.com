@@ -3,6 +3,35 @@ import { type Publication, type GroupedPublications } from "../types";
 import publications from "../data/publications.json";
 import { format } from "date-fns";
 
+const VENUE_MAP: Array<[RegExp, string]> = [
+  [/community\.databricks\.com/, "Databricks Community"],
+  [/databricks\.com/, "Databricks Blog"],
+  [/apps-cookbook\.dev/, "Apps Cookbook"],
+  [/community\.aws/, "AWS Community"],
+  [/aws\.amazon\.com/, "AWS Blog"],
+  [/serverlesstypescript\.com/, "serverlesstypescript.com"],
+  [/dev\.to/, "DEV"],
+  [/entwickler\.de/, "entwickler.de"],
+  [/dev-insider\.de/, "Dev-Insider"],
+  [/it-administrator\.de/, "IT-Administrator"],
+  [/aisel\.aisnet\.org/, "AIS eLibrary"],
+  [/scholarspace\.manoa\.hawaii\.edu|hdl\.handle\.net/, "HICSS"],
+  [/ediss\.sub\.uni-hamburg\.de/, "Uni Hamburg"],
+  [/inf\.uni-hamburg\.de/, "Uni Hamburg"],
+  [/library\.gito\.de/, "GITO Verlag"],
+];
+
+function venueFor(url: string): string {
+  for (const [pattern, label] of VENUE_MAP) {
+    if (pattern.test(url)) return label;
+  }
+  try {
+    return new URL(url).hostname.replace(/^www\./, "");
+  } catch {
+    return "";
+  }
+}
+
 function groupByYear(data: Publication[]): GroupedPublications {
   return data.reduce((acc: GroupedPublications, item) => {
     (acc[item.year] = acc[item.year] || []).push(item);
@@ -14,15 +43,22 @@ const groupedPublications: GroupedPublications = groupByYear(publications);
 ---
 
 <div>
-  <h2 class="font-bold text-2xl md:text-3xl mb-6">Publications</h2>
+  <h2
+    class="font-mono text-[12px] uppercase tracking-[0.18em] text-[#86867e] font-medium mt-20 mb-2 pb-[14px] border-b border-[#26272a]"
+    >Publications</h2
+  >
   <div>
     {
       Object.entries(groupedPublications)
         .sort(([yearA], [yearB]) => parseInt(yearB) - parseInt(yearA))
         .map(([year, yearlyPublications]) => (
-          <div class="mt-4">
-            <h2 class="text-lg md:text-2xl font-bold">{year}</h2>
-            <div class="mb-8">
+          <div
+            class="grid grid-cols-[64px_1fr] gap-x-5 py-6 border-b border-[#1c1d20]"
+          >
+            <div class="font-mono text-[13px] text-[#6f6f68] pt-[5px]"
+              >{year}</div
+            >
+            <div class="flex flex-col gap-[18px]">
               {yearlyPublications
                 .sort(
                   (a, b) =>
@@ -30,34 +66,29 @@ const groupedPublications: GroupedPublications = groupByYear(publications);
                     new Date(a.published).getTime()
                 )
                 .map(({ published, url, title, translations }) => (
-                  <div class="mt-6">
-                    <p class="text-lg md:text-xl font-sans leading-9">
-                      <a
-                        href={url}
-                        class="text-amber-300 underline underline-offset-2 hover:text-amber-500"
-                        target="_blank"
-                      >
-                        {title}
-                      </a>
-                      {" "}
-                      <span class="text-gray-200">
-                        {" "}
-                        - {format(new Date(published), "MMMM d, yyyy")}
-                      </span>
-                    </p>
-                    {translations &&
-                      translations.map(({ published, url, title, lang }) => (
-                        <p class="text-sm pl-7 mt-3">
-                          <span class="mr-1">{lang}</span>
-                          <a
-                            href={url}
-                            class="text-amber-300 underline underline-offset-2 hover:text-amber-500"
-                            target="_blank"
-                          >
-                            {title}{" "}
-                          </a>
-                        </p>
-                      ))}
+                  <div class="flex flex-col gap-[5px]">
+                    <a
+                      href={url}
+                      target="_blank"
+                      class="text-[20px] leading-[1.5] text-[#ece9e3] no-underline hover:text-[#e0b354]"
+                      >{title}</a
+                    >
+                    <div
+                      class="font-mono text-[12px] text-[#7d7d75] flex gap-[10px]"
+                    >
+                      <span class="text-[#a08a53]">{venueFor(url)}</span>
+                      <span>{format(new Date(published), "MMM yyyy")}</span>
+                    </div>
+                    {translations?.map(
+                      ({ url: translationUrl, title: translationTitle, lang }) => (
+                        <a
+                          href={translationUrl}
+                          target="_blank"
+                          class="text-[15px] text-[#97948d] no-underline pl-[14px] border-l border-[#2a2b2e] hover:text-[#e0b354]"
+                          >{lang} {translationTitle}</a
+                        >
+                      )
+                    )}
                   </div>
                 ))}
             </div>

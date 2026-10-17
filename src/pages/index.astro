@@ -3,47 +3,71 @@ import Layout from "../layouts/Layout.astro";
 import { Image } from "astro:assets";
 import pv from "../media/pv.png";
 import Socials from "../components/socials.astro";
+import Projects from "../components/projects.astro";
 import Publications from "../components/publications.astro";
 ---
 
-<Layout title="Pascal Vogel">
-  <main>
-    <div class="p-10 md:p-28 max-w-screen-xl mx-auto text-white">
-      <Image
-        src={pv}
-        alt="Portrait image of Pascal Vogel"
-        class="rounded-full w-16 h-16 mb-5"
-      />
-      <div class="mb-20">
-        <h2 class="text-2xl md:text-3xl font-bold mb-5">Hello 👋</h2>
-        <p class="text-lg md:text-xl mb-5 leading-9">
-          I'm Pascal. I work as a Solutions Architect at <a
-            href="https://www.databricks.com/"
-            target="_blank"
-            aria-label="Link to Databricks website"
-            class="text-amber-300 underline underline-offset-2 hover:text-amber-500"
-            >Databricks</a>, the data and AI company. In my day job, I help enterprises do cool stuff with their data. I used to be a Solutions Architect at <a
-            href="https://aws.amazon.com/"
-            target="_blank"
-            aria-label="Link to Amazon Web Services (AWS)"
-            class="text-amber-300 underline underline-offset-2 hover:text-amber-500"
-            >Amazon Web Services (AWS)</a
-          > and a research associate and doctoral student
-          at the <a
-            href="https://www.inf.uni-hamburg.de/inst/ab/itmc.html"
-            target="_blank"
-            aria-label="Link to the Chair of IT Management and Consulting at the University of Hamburg"
-            class="text-amber-300 underline underline-offset-2 hover:text-amber-500"
-            >Chair of IT Management and Consulting</a
-          > at the University of Hamburg.
-        </p>
-        <p class="text-lg md:text-xl mb-8 leading-9">
-          I love learning new technologies and connecting with like-minded
-          people who want to make a difference. Take a look at my work below and
-          reach out if you want to chat!
-        </p>
+<Layout title="Dr. Pascal Vogel">
+  <main class="font-serif text-[#ece9e3]">
+    <div class="max-w-[800px] mx-auto px-6 pt-16 pb-20 md:px-10 md:pt-24 md:pb-[120px]">
+      <div class="flex items-center gap-[18px] mb-14">
+        <Image
+          src={pv}
+          alt="Pascal Vogel"
+          width={56}
+          height={56}
+          densities={[1, 2, 3]}
+          loading="eager"
+          fetchpriority="high"
+          class="rounded-full shrink-0"
+        />
+        <div class="flex flex-col gap-[3px] min-w-0">
+          <span class="text-[21px] tracking-[0.01em]">Dr. Pascal Vogel</span>
+          <span
+            class="font-mono text-[12px] uppercase tracking-[0.1em] text-[#86867e]"
+            >Senior Solutions Architect · Hamburg</span
+          >
+        </div>
+      </div>
+
+      <p
+        class="text-[24px] md:text-[28px] leading-[1.5] mb-[22px] font-light text-[#f4f1eb]"
+      >
+        Hi, I'm Pascal!
+      </p>
+      <p class="text-[20px] leading-[1.75] mb-[18px] text-[#c8c5bd]">
+        I work as a Senior Solutions Architect at <a
+          href="https://www.databricks.com/"
+          target="_blank"
+          aria-label="Link to Databricks website"
+          class="editorial-link"
+          >Databricks</a
+        >, the data and AI company. In my day job, I help enterprises do cool
+        stuff with their data. I used to be a Solutions Architect at <a
+          href="https://aws.amazon.com/"
+          target="_blank"
+          aria-label="Link to Amazon Web Services (AWS)"
+          class="editorial-link"
+          >Amazon Web Services (AWS)</a
+        > and a research associate and doctoral student at the <a
+          href="https://www.inf.uni-hamburg.de/inst/ab/itmc.html"
+          target="_blank"
+          aria-label="Link to the Chair of IT Management and Consulting at the University of Hamburg"
+          class="editorial-link"
+          >Chair of IT Management and Consulting</a
+        > at the University of Hamburg.
+      </p>
+      <p class="text-[20px] leading-[1.75] mb-8 text-[#c8c5bd]">
+        I love learning new technologies and connecting with like-minded people
+        who want to make a difference. Take a look at my work below and reach
+        out if you want to chat!
+      </p>
+
+      <div class="mb-[88px]">
         <Socials />
       </div>
+
+      <Projects />
       <Publications />
     </div>
   </main>

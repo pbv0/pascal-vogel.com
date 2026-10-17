@@ -1,0 +1,141 @@
+---
+const projects = [
+  {
+    name: "Conjugatu",
+    year: "2026",
+    url: "https://conjugatu.app",
+    host: "conjugatu.app",
+    icon: "/projects/conjugatu.png",
+    blurb:
+      "Brazilian Portuguese verb conjugation app for iPhone. Look up 3,000 verbs across fifteen tenses with audio and 100,000+ example sentences, then drill the forms you keep getting wrong. Fully offline, no account.",
+    tags: ["React Native", "Expo", "TypeScript", "SQLite"],
+  },
+  {
+    name: "Databricks Apps Cookbook",
+    year: "2025",
+    url: "https://apps-cookbook.dev",
+    host: "apps-cookbook.dev",
+    icon: "/projects/apps-cookbook.png",
+    blurb:
+      "An open collection of copy-paste recipes for building data and AI apps on Databricks Apps — auth, jobs, Lakebase, deployment.",
+    tags: ["Python", "Streamlit", "Dash", "Docusaurus"],
+  },
+  {
+    name: "Serverless PDF Chat",
+    year: "2023",
+    url: "https://github.com/aws-samples/serverless-pdf-chat",
+    host: "github.com/aws-samples",
+    icon: "/projects/serverless-pdf-chat.png",
+    blurb:
+      "Reference architecture for chatting with your own PDF documents using retrieval-augmented generation on AWS Lambda and Amazon Bedrock.",
+    tags: ["AWS Lambda", "Bedrock", "LangChain", "React"],
+  },
+  {
+    name: "Mein Großlohe",
+    year: "2020",
+    url: "https://mein-grosslohe.de",
+    host: "mein-grosslohe.de",
+    icon: "/projects/mein-grosslohe.png",
+    blurb:
+      "A curated directory of health, social and leisure offerings in and around Großlohe in Hamburg, browsable by category, audience and map. Developed in cooperation with HAW Hamburg.",
+    tags: ["Django", "PostgreSQL", "WeasyPrint"],
+  },
+  {
+    name: "Meine Nachbarn",
+    year: "2019",
+    url: "https://www.inf.uni-hamburg.de/inst/ab/itmc/research/projects-completed/meine-nachbarn.html",
+    host: "inf.uni-hamburg.de",
+    icon: "/projects/meine-nachbarn.svg",
+    blurb:
+      "A neighborhood platform prototype exploring how digital tools can support local participation, with a focus on older adults.",
+    tags: ["Django", "PostgreSQL", "Celery"],
+  },
+];
+
+const visibleCount = 3;
+const total = projects.length;
+---
+
+<div>
+  <h2
+    class="font-mono text-[12px] uppercase tracking-[0.18em] text-[#86867e] font-medium mb-2 pb-[14px] border-b border-[#26272a]"
+    >Projects</h2
+  >
+  <div class="flex flex-col">
+    {
+      projects.map((p, i) => (
+        <a
+          href={p.url}
+          target="_blank"
+          data-projects-extra={i >= visibleCount ? "" : undefined}
+          class="flex flex-col gap-2 py-[26px] border-b border-[#1c1d20] no-underline text-inherit relative isolate before:absolute before:inset-y-1.5 before:-inset-x-4 before:-z-10 before:rounded-lg before:transition-colors hover:before:bg-[#141c30]"
+        >
+          <div class="flex items-center justify-between gap-4 pb-1">
+            <span class="flex items-center gap-3">
+              <img
+                src={p.icon}
+                alt=""
+                width="28"
+                height="28"
+                loading="lazy"
+                class="size-7 shrink-0 rounded-md object-contain"
+              />
+              <span class="text-[23px] text-[#f4f1eb] [text-box:trim-both_cap_alphabetic]">{p.name}</span>
+            </span>
+            <span class="font-mono text-[12px] text-[#6f6f68] tracking-[0.08em]"
+              >{p.year}</span
+            >
+          </div>
+          <p class="text-[19px] leading-[1.65] m-0 text-[#b4b1a9]">{p.blurb}</p>
+          <div
+            class="flex flex-row flex-wrap gap-[10px] mt-[2px] font-mono text-[12px] text-[#7d7d75]"
+          >
+            {p.tags.map((t) => (
+              <span>{t}</span>
+            ))}
+            <span class="text-[#e0b354]">{p.host} ↗</span>
+          </div>
+        </a>
+      ))
+    }
+  </div>
+  {
+    total > visibleCount && (
+      <button
+        type="button"
+        data-projects-toggle
+        data-collapsed-label={`Show all ${total}`}
+        hidden
+        class="mt-5 font-mono text-[13px] uppercase tracking-[0.06em] text-[#86867e] hover:text-[#e0b354] cursor-pointer"
+        >Show all {total}</button
+      >
+    )
+  }
+</div>
+
+<script is:inline>
+  // Runs during parsing, before first paint: collapse the extra rows and
+  // reveal the toggle. Without JS, all rows stay visible and the toggle hidden.
+  (() => {
+    const toggle = document.querySelector("[data-projects-toggle]");
+    const extra = document.querySelectorAll("[data-projects-extra]");
+    if (!toggle || !extra.length) return;
+
+    let expanded = false;
+    const render = () => {
+      extra.forEach((el) => {
+        el.hidden = !expanded;
+      });
+      toggle.textContent = expanded
+        ? "Show less"
+        : (toggle.dataset.collapsedLabel ?? "Show all");
+    };
+
+    toggle.addEventListener("click", () => {
+      expanded = !expanded;
+      render();
+    });
+    render();
+    toggle.hidden = false;
+  })();
+</script>

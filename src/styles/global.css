@@ -1,1 +1,17 @@
 @import "tailwindcss";
+
+@theme {
+  --font-serif: "Newsreader", Georgia, serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+
+.editorial-link {
+  color: #e0b354;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(224, 179, 84, 0.4);
+}
+
+.editorial-link:hover {
+  color: #f2cd7c;
+  border-bottom-color: #f2cd7c;
+}

@@ -1,22 +1,47 @@
 ---
+import { getImage } from "astro:assets";
 import "../styles/global.css";
+import pv from "../media/pv.png";
 
 interface Props {
   title: string;
+  description?: string;
 }
 
-const { title } = Astro.props;
+const {
+  title,
+  description = "Pascal Vogel is a Senior Solutions Architect at Databricks in Hamburg. Projects and writing on data and AI apps, serverless, and the cloud.",
+} = Astro.props;
+
+const ogImage = await getImage({ src: pv, width: 392, format: "png" });
+const ogImageUrl = new URL(ogImage.src, Astro.site);
+const canonicalUrl = new URL(Astro.url.pathname, Astro.site);
 ---
 
 <!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="description" content="Pascal Vogel's personal website." />
+    <meta name="description" content={description} />
     <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="canonical" href={canonicalUrl} />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Pascal Vogel" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonicalUrl} />
+    <meta property="og:image" content={ogImageUrl} />
+    <meta property="og:image:alt" content="Portrait of Pascal Vogel" />
+    <meta name="twitter:card" content="summary" />
     <meta name="generator" content={Astro.generator} />
     <script defer data-domain="pascal-vogel.com" src="https://analytics.pascal-vogel.com/js/script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;1,6..72,300;1,6..72,400&family=JetBrains+Mono:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
     <title>{title}</title>
   </head>
   <body class="bg-slate-900">
